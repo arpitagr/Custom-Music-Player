@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Custom GUI Web Music Player : Arpit Agrawal</title>
+	<link rel="stylesheet" type="text/css" href="css/main_style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+	<div id="bg">
+		<div id="blackLayer"></div>
+		<img src="poster.jpg">
+	</div>
+	<div id="main">
+		<div id="image">
+			<img src="poster.jpg">
+		</div>
+		<div id="player">
+			<div id="songTitle">Demo</div>
+			<div id="buttons">
+				<button id="pre" onclick="pre();"><i class="fas fa-backward"></i></button>
+				<button id="play" onclick="playOrPauseSong();"><i class="fas fa-play"></i></button>
+				<button id="next" onclick="next();"><i class="fas fa-forward"></i></button>
+
+			</div>	
+			<div id="seek-bar">
+				<div id="fill"></div>
+				<div id="handle"></div>
+			</div>	
+				<div id="timeing">00:00/00:00</div>
+				<button id="mute" onclick="muteUnmute();"><i class="fas fa-volume-up"></i></button>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/music_list.js"></script>
+<script type="text/javascript" src="js/music_player_functions.js"></script>
+<script type="text/javascript" src="js/main_player.js"></script>
+</html>
